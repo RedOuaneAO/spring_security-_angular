@@ -8,13 +8,15 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './shared-component/nav-bar/nav-bar.component';
+import { HomeComponent } from './home/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     SigninComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
