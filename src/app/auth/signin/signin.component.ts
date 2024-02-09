@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './signin.component.css'
 })
 export class SigninComponent {
+  formData:any={};
+constructor(){}
 
+ngOnInit(){
+console.log("ngOnInit")
+}
+loing(){
+  console.log("test");
+  console.log(this.formData);
+}
 }
