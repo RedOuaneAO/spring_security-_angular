@@ -16,5 +16,11 @@ export class AuthServiceService {
   getUserDetails():Observable<any>{
     return this.http.get(environment.apiURL+'userDetails');
   }
+  onlyAdmin():Observable<any>{
+    return this.http.get(environment.apiURL+'admin');
+  }
+  logout(){
+    localStorage.removeItem('token');
+  }
 
 }
